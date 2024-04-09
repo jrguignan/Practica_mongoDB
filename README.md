@@ -18,6 +18,8 @@
 
 Es un sistema de gestión de bases de datos de código abierto y orientado a documentos, que se clasifica dentro de la categoría de bases de datos NoSQL (Not Only SQL). Está diseñado para ser escalable, flexible y fácil de usar. En lugar de almacenar datos en tablas con filas y columnas, como en las bases de datos relacionales tradicionales, MongoDB almacena datos en documentos BSON (Binary JSON) dentro de colecciones.<br>
 
+Las colecciones serían el homologo a tablas en SQL.
+
 Algunas de las ventajas de MongoDB incluyen:
 
 - Modelo de Datos Flexible.
@@ -67,7 +69,7 @@ Replica Set Name: Cluster0-shard-0<br>
 Read Preference: Primary Preferred<br>
 <br>
 
-La conexión de practica es una base de datos que consta de: 13 colecciones.
+La conexión de práctica es una base de datos que consta de 13 colecciones.
 
 <br>[Volver al Índice](#Índice)
 
@@ -75,7 +77,7 @@ La conexión de practica es una base de datos que consta de: 13 colecciones.
 
 Esto nos va ha facilitar hacer inserciones y modificaciones sobre bases de datos en una conexion remota.
 
-Ir a la pagina de [mongoDB - Atlas](https://www.mongodb.com/es/lp/cloud/atlas/try4?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_retarget-brand_gic-null_amers-all_ps-all_desktop_eng_lead&utm_term=mongodb%20atlas&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=14412646314&adgroup=131761122132&cq_cmp=14412646314&gad_source=1&gclid=Cj0KCQjwztOwBhD7ARIsAPDKnkA3SerxVVe3vQyp7GRi1S5JYbAOIAaozkAcp4-kfOhkYi28hgf-S-4aAsY-EALw_wcB?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_retarget-brand_gic-null_amers-all_ps-all_desktop_eng_lead&utm_term=mongodb%20atlas&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=14412646314&adgroup=131761122132&cq_cmp=14412646314&gad_source=1&gclid=Cj0KCQjwztOwBhD7ARIsAPDKnkA3SerxVVe3vQyp7GRi1S5JYbAOIAaozkAcp4-kfOhkYi28hgf-S-4aAsY-EALw_wcB) y crear una cuenta, en mi caso gratis.
+Ir a la pagina de [mongoDB - Atlas](https://www.mongodb.com/es/lp/cloud/atlas/try4?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_retarget-brand_gic-null_amers-all_ps-all_desktop_eng_lead&utm_term=mongodb%20atlas&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=14412646314&adgroup=131761122132&cq_cmp=14412646314&gad_source=1&gclid=Cj0KCQjwztOwBhD7ARIsAPDKnkA3SerxVVe3vQyp7GRi1S5JYbAOIAaozkAcp4-kfOhkYi28hgf-S-4aAsY-EALw_wcB?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_retarget-brand_gic-null_amers-all_ps-all_desktop_eng_lead&utm_term=mongodb%20atlas&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=14412646314&adgroup=131761122132&cq_cmp=14412646314&gad_source=1&gclid=Cj0KCQjwztOwBhD7ARIsAPDKnkA3SerxVVe3vQyp7GRi1S5JYbAOIAaozkAcp4-kfOhkYi28hgf-S-4aAsY-EALw_wcB), crear una cuenta y luego escoger el servicio gratuito, en mi caso.
 
 <p align="center">
 <img src="images/free1.png"  height=450>
