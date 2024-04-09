@@ -80,31 +80,27 @@ La conexión de practica es una base de datos que consta de: 13 colecciones.
 
 Esto nos va ha facilitar hacer inserciones y modificaciones sobre bases de datos en una conexion remota.
 
+Ir a la pagina de [mongoDB - Atlas](https://www.mongodb.com/es/lp/cloud/atlas/try4?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_retarget-brand_gic-null_amers-all_ps-all_desktop_eng_lead&utm_term=mongodb%20atlas&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=14412646314&adgroup=131761122132&cq_cmp=14412646314&gad_source=1&gclid=Cj0KCQjwztOwBhD7ARIsAPDKnkA3SerxVVe3vQyp7GRi1S5JYbAOIAaozkAcp4-kfOhkYi28hgf-S-4aAsY-EALw_wcB?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_retarget-brand_gic-null_amers-all_ps-all_desktop_eng_lead&utm_term=mongodb%20atlas&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=14412646314&adgroup=131761122132&cq_cmp=14412646314&gad_source=1&gclid=Cj0KCQjwztOwBhD7ARIsAPDKnkA3SerxVVe3vQyp7GRi1S5JYbAOIAaozkAcp4-kfOhkYi28hgf-S-4aAsY-EALw_wcB) y crear una cuenta, en mi caso gratis.
+
 <p align="center">
 <img src="images/free1.png"  height=450>
 </p>
 
 
-Ir a la pagina de mongoDB - Atlas y crear una cuenta, en mi caso gratis.
+Luego sigue los pasos que te muestren, loprincipal es la configuración del cluster, en mi caso utilicé AWS, en Virginia.
 
-
-Luego sigue los pasos que te muestren.
-
-Al terminar faltaría configurar un usuario y una contraseña para acceder a la base de datos. esto se hace en Database Access, se debe colocar la opcion de lectura y escritura para el usuario.
+Al terminar faltaría configurar un usuario y una contraseña para acceder a la base de datos. esto se hace en Database Access, se debe colocar la opción de lectura y escritura para el usuario.
 
 tambien sería útil por ser un práctica configurar la entrada para cualquier IP, esto ahorraría tiempo en configuración, esto se hace en Network Access
 
-Luego en database y dando click a connect se puede obtener la URI para conectar con Compass o la shell de VS, sólo hay que cambiar <password> por la contraseña de usuario creada.
-
-
-
-
-
-
+Luego en database y dando click a connect se puede obtener la URI para conectar con Compass y la shell de VS, sólo hay que cambiar <password> por la contraseña de usuario creada.
 
 <br>[Volver al Índice](#Índice)
 
 # Consulta de Datos (CRUD)
+
+
+
 
 ```mongoDB
 
