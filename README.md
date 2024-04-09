@@ -51,11 +51,11 @@ Para el siguiente caso se está mostrando que se debe entrar en las opciones ava
 ## Datos conexión
 
 ### URI Servidor local: 
-[mongodb://localhost:27017/](mongodb://localhost:27017/)
+- mongodb://localhost:27017/
 <br>
 
 ### URI Conexión de Práctica: 
-[mongodb://m001-student:m001-mongodb-basics@cluster0-shard-00-00-jxeqq.mongodb.net/?replicaSet=Cluster0-shard-0&tls=true](mongodb://m001-student:m001-mongodb-basics@cluster0-shard-00-00-jxeqq.mongodb.net/?replicaSet=Cluster0-shard-0&tls=true)
+- [mongodb://m001-student:m001-mongodb-basics@cluster0-shard-00-00-jxeqq.mongodb.net/?replicaSet=Cluster0-shard-0&tls=true](mongodb://m001-student:m001-mongodb-basics@cluster0-shard-00-00-jxeqq.mongodb.net/?replicaSet=Cluster0-shard-0&tls=true)
 <br>
 
 ### Datos a Rellenar Conexión de Práctica:
