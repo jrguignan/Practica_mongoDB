@@ -51,23 +51,23 @@ Para el siguiente caso se está mostrando que se debe entrar en las opciones ava
 ## Datos conexión
 
 ### URI Servidor local: 
-mongodb://localhost:27017/
+[mongodb://localhost:27017/](mongodb://localhost:27017/)
 <br>
 
 ### URI Conexión de Práctica: 
-mongodb://m001-student:m001-mongodb-basics@cluster0-shard-00-00-jxeqq.mongodb.net/?replicaSet=Cluster0-shard-0&tls=true
+[mongodb://m001-student:m001-mongodb-basics@cluster0-shard-00-00-jxeqq.mongodb.net/?replicaSet=Cluster0-shard-0&tls=true](mongodb://m001-student:m001-mongodb-basics@cluster0-shard-00-00-jxeqq.mongodb.net/?replicaSet=Cluster0-shard-0&tls=true)
 <br>
 
 ### Datos a Rellenar Conexión de Práctica:
-Hostname: cluster0-shard-00-00-jxeqq.mongodb.net
-Authentication: Username / Password
-Username: m001-student
-Password: m001-mongodb-basics
-Replica Set Name: Cluster0-shard-0
-Read Preference: Primary Preferred
+Hostname: cluster0-shard-00-00-jxeqq.mongodb.net<br>
+Authentication: Username / Password<br>
+Username: m001-student<br>
+Password: m001-mongodb-basics<br>
+Replica Set Name: Cluster0-shard-0<br>
+Read Preference: Primary Preferred<br>
 <br>
 
-La conexión de practica es una base de datos que consta de 
+La conexión de practica es una base de datos que consta de: 13 colecciones.
 
 <br>[Volver al Índice](#Índice)
 
