@@ -36,7 +36,7 @@ Se puede hacer con una el Uniform Resource Identifier (URI) o rellenando los cam
 Al intentar crer una nueva conexión por defecto intenta establecer la conexión con el servidor local.
 
 <p align="center">
-<img src="images/local.png"  height=400>
+<img src="images/local.png"  height=200>
 </p>
 
 En el caso anterior se está creando la conexión local utilizando la URI, luego de esto se puede salvar la conexión y asignarle un color, para mayor facilidad.
@@ -44,7 +44,7 @@ En el caso anterior se está creando la conexión local utilizando la URI, luego
 Para el siguiente caso se está mostrando que se debe entrar en las opciones avanzadas de conexión para rellenar **Host** en **General**, **Username** y **Password** en **Authentication** y luego **Replica Set Name** en **advance**.
 
 <p align="center">
-<img src="images/atlas.png"  height=500>
+<img src="images/atlas.png"  height=250>
 </p>
 
 
