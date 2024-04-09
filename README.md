@@ -7,7 +7,7 @@
 # Índice
 * [mongoDB](#mongoDB)
 * [Crear Conexiones en mongoDB Compass](#Crear-Conexiones-en-mongoDB-Compass)
-* [Crear Base de Datos en mongoDB - ATLAS](#Crear-Base-de-Datos-en-mongoDB---ATLAS)
+* [Crear Cluster mongoDB - ATLAS](#Crear-Cluster-mongoDB---ATLAS)
 * [Consulta de Datos (CRUD)](#Consulta-de-Datos-(CRUD))
 * [Operadores de Consultas](#Operadores-de-Consultas)
 * [Tegnologías Utilizadas](#Tegnologías-Utilizadas)
@@ -76,7 +76,29 @@ La conexión de practica es una base de datos que consta de: 13 colecciones.
 
 <br>[Volver al Índice](#Índice)
 
-# Crear Base de Datos en mongoDB - ATLAS
+# Crear Cluster mongoDB - ATLAS
+
+Esto nos va ha facilitar hacer inserciones y modificaciones sobre bases de datos en una conexion remota.
+
+<p align="center">
+<img src="images/free1.png"  height=450>
+</p>
+
+
+Ir a la pagina de mongoDB - Atlas y crear una cuenta, en mi caso gratis.
+
+
+Luego sigue los pasos que te muestren.
+
+Al terminar faltaría configurar un usuario y una contraseña para acceder a la base de datos. esto se hace en Database Access, se debe colocar la opcion de lectura y escritura para el usuario.
+
+tambien sería útil por ser un práctica configurar la entrada para cualquier IP, esto ahorraría tiempo en configuración, esto se hace en Network Access
+
+Luego en database y dando click a connect se puede obtener la URI para conectar con Compass o la shell de VS, sólo hay que cambiar <password> por la contraseña de usuario creada.
+
+
+
+
 
 
 
