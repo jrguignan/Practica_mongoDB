@@ -7,6 +7,8 @@
 # Índice
 * [Crear Conexiones en mongoDB Compass](#Crear-Conexiones-en-mongoDB-Compass)
 * [Crear Base de Datos en mongoDB - ATLAS](#Crear-Base-de-Datos-en-mongoDB---ATLAS)
+* [Consulta de Datos (CRUD)](#Consulta-de-Datos-(CRUD))
+* [Operadores de Consultas](#Operadores-de-Consultas)
 * [Tegnologías Utilizadas](#Tegnologías-Utilizadas)
 * [Autor](#Autor)
 
@@ -19,12 +21,22 @@
 
 # Crear Base de Datos en mongoDB - ATLAS
 
+
+
 <br>[Volver al Índice](#Índice)
-# Comandos
+
+# Consulta de Datos (CRUD)
 
 ```mongoDB
 
 ```
+
+# Operadores de Consultas
+
+
+
+
+<br>[Volver al Índice](#Índice)
 
 # Tegnologías Utilizadas
 - mongoDb - Version 7.0.7
@@ -33,6 +45,8 @@
 - Visual Studio - Version 1.88.0
 - Visulal Studio - Estension MongoDv for VS - V.1.5.0
 
+
+<br>[Volver al Índice](#Índice)
 
 # Autor
 - José R. Guignan
