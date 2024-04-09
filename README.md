@@ -69,11 +69,6 @@ Read Preference: Primary Preferred<br>
 
 La conexión de practica es una base de datos que consta de: 13 colecciones.
 
-<p align="center">
-<img src="images/practica.png"  height=350>
-</p>
-
-
 <br>[Volver al Índice](#Índice)
 
 # Crear Cluster mongoDB - ATLAS
