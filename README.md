@@ -1,4 +1,4 @@
-# Práctica mongoDB <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/398b19b1-9aae-4c1f-8bc0-d172a2c08d68" width="50"> - En Construcción 🚧
+# Práctica mongoDB  - En Construcción 🚧
 
 <p align="center">
 <img src="images/mongodb.png"  height=150>
@@ -14,7 +14,7 @@
 * [Autor](#Autor)
 
 
-# mongoDB
+# mongoDB 
 
 Es un sistema de gestión de bases de datos de código abierto y orientado a documentos, que se clasifica dentro de la categoría de bases de datos NoSQL (Not Only SQL). Está diseñado para ser escalable, flexible y fácil de usar. En lugar de almacenar datos en tablas con filas y columnas, como en las bases de datos relacionales tradicionales, MongoDB almacena datos en documentos BSON (Binary JSON) dentro de colecciones.<br>
 
@@ -84,7 +84,7 @@ Ir a la pagina de [mongoDB - Atlas](https://www.mongodb.com/es/lp/cloud/atlas/tr
 </p>
 
 
-Luego sigue los pasos que te muestren, loprincipal es la configuración del cluster, en mi caso utilicé AWS, en Virginia.
+Luego sigue los pasos que te muestren, lo principal es la configuración del cluster, en mi caso utilicé AWS, en Virginia.
 
 Al terminar faltaría configurar un usuario y una contraseña para acceder a la base de datos. esto se hace en Database Access, se debe colocar la opción de lectura y escritura para el usuario.
 
@@ -94,20 +94,50 @@ Luego en database y dando click a connect se puede obtener la URI para conectar 
 
 <br>[Volver al Índice](#Índice)
 
+# Operadores
+
+Es mejor tener claro primero los operadores, para poder hacer el filtrado más adelante. 
+
+
+## Operadores de Lógicos
+
+```mongoDB
+
+```
+
+## Operadores de Comparación
+
+```mongoDB
+
+```
+
+## Operadores de Elementos
+
+```mongoDB
+
+```
+
+## Operadores de Proyección
+
+```mongoDB
+
+```
+
+## Operadores de Evaluación
+
+```mongoDB
+
+```
+
 # Consulta de Datos (CRUD)
 
+## Inserción
 
+## Lectura
 
+## Actualización
 
-```mongoDB
-
-```
-
-# Operadores de Consultas
-
-```mongoDB
-
-```
+## Borrado
 
 
 <br>[Volver al Índice](#Índice)
