@@ -110,6 +110,17 @@ Es mejor tener claro primero los operadores, para poder hacer el filtrado más a
 ## Operadores de Lógicos
 
 ```mongoDB
+# AND
+{ $and: [ { <expression1> }, { <expression2> }, ... , { <expressionN> } ] }
+
+# OR
+{ $or: [ { <expression1> }, { <expression2> }, ... , { <expressionN> } ] }
+
+# NOR - Lo contrario a la condicción OR
+{ $nor: [ { <expression1> }, { <expression2> }, ...  { <expressionN> } ] }
+
+# NOT
+{ campo: { $not: { <operator-expression> } } }
 
 ```
 
