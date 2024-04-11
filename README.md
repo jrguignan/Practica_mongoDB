@@ -8,8 +8,16 @@
 * [mongoDB](#mongoDB)
 * [Crear Conexiones en mongoDB Compass](#Crear-Conexiones-en-mongoDB-Compass)
 * [Crear Cluster mongoDB - ATLAS](#Crear-Cluster-mongoDB---ATLAS)
+* [Operadores](#Operadores)
+  * [Comparación](#Comparación)
+  * [Elementos](#Elementos)
+  * [Proyección](#Proyección)
+  * [Evaluación](#Evaluación)
 * [Consulta de Datos (CRUD)](#Consulta-de-Datos-(CRUD))
-* [Operadores de Consultas](#Operadores-de-Consultas)
+  * [Inserción](#Inserción)
+  * [Lectura](#Lectura)
+  * [Actualización](#Actualización)
+  * [Borrado](#Borrado)
 * [Tegnologías Utilizadas](#Tegnologías-Utilizadas)
 * [Autor](#Autor)
 
@@ -105,40 +113,52 @@ Es mejor tener claro primero los operadores, para poder hacer el filtrado más a
 
 ```
 
-## Operadores de Comparación
+## Comparación
 
 ```mongoDB
 
 ```
 
-## Operadores de Elementos
+## Elementos
 
 ```mongoDB
 
 ```
 
-## Operadores de Proyección
+## Proyección
 
 ```mongoDB
 
 ```
 
-## Operadores de Evaluación
+## Evaluación
 
 ```mongoDB
 
 ```
+
+<br>[Volver al Índice](#Índice)
 
 # Consulta de Datos (CRUD)
 
 ## Inserción
+```mongoDB
+
+```
 
 ## Lectura
+```mongoDB
+
+```
 
 ## Actualización
+```mongoDB
 
+```
 ## Borrado
+```mongoDB
 
+```
 
 <br>[Volver al Índice](#Índice)
 
