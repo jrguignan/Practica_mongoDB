@@ -110,23 +110,52 @@ Es mejor tener claro primero los operadores, para poder hacer el filtrado más a
 ## Operadores de Lógicos
 
 ```mongoDB
-# AND
+// AND
 { $and: [ { <expression1> }, { <expression2> }, ... , { <expressionN> } ] }
 
-# OR
+// OR
 { $or: [ { <expression1> }, { <expression2> }, ... , { <expressionN> } ] }
 
-# NOR - Lo contrario a la condicción OR
-{ $nor: [ { <expression1> }, { <expression2> }, ...  { <expressionN> } ] }
+// NOR - Lo contrario a la condicción OR
+{ $nor: [ { <expression1> }, { <expression2> }, ... ,  { <expressionN> } ] }
 
-# NOT
-{ campo: { $not: { <operator-expression> } } }
+// NOT
+{ field: { $not: { <operator-expression> } } }
+
+// Ejemplo
+db.basedd.find( { $and: [ { year: 1998 }, { price: 10 } ] } )
 
 ```
 
 ## Comparación
 
 ```mongoDB
+// Igual a
+{ field: { $eq: <value> } }
+
+// Mayor que
+{ field: { $gt: value } }
+
+// Menor que
+{ field: { $lt: value } }
+
+// Mayor o igual que
+{ field: { $gte: value } }
+
+// Menor o igual que
+{ field: { $lte: value } }
+
+// Devuelve documentos que cumplen con los valores específicos
+{ field: { $in: [<value1>, <value2>, ... <valueN> ] } }
+
+// Devuelve documentos que NO cumplen con los valores específicos
+{ field: { $in: [<value1>, <value2>, ... <valueN> ] } }
+
+
+// Devuelve los documentos en los que el valor especificado no es igual
+{ $ne: value } }
+
+// Ejemplo
 
 ```
 
