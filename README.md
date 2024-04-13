@@ -166,7 +166,9 @@ db.basedd.find( { $and: [ { year: 1998 }, { price: 10 } ] } )
 
 // Coincide con los documentos que tienen un campo especificado. Este operador
 //tiene un valor booleano que puede ser true o false.
+
 { field: { $exists: <boolean> } } 
+
 
 // Hace coincidir los documentos según el tipo de campo especificado. Es útil cuando 
 //tienes datos muy desestructurados, o cuando los tipos de datos no son predecibles.
@@ -178,6 +180,11 @@ db.basedd.find( { $and: [ { year: 1998 }, { price: 10 } ] } )
 ## Evaluación
 
 ```mongoDB
+// Para hacer coincidir los documentos en los que el valor de un campo especificado 
+//es igual al resto después de ser dividido por un valor especificado
+
+{ field: { $mod: [ divisor, remainder ] } }
+
 
 
 ```
@@ -212,7 +219,7 @@ db.basedd.find( { $and: [ { year: 1998 }, { price: 10 } ] } )
 - mongoDB Compass - Version 1.42.3
 - mongoDB Shell - Version 2.2.2
 - Visual Studio - Version 1.88.0
-- Visulal Studio - Estension MongoDv for VS - V.1.5.0
+- Visulal Studio - Estension MongoDB for VS - V.1.5.0
 
 
 <br>[Volver al Índice](#Índice)
