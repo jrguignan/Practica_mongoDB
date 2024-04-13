@@ -126,6 +126,7 @@ Es mejor tener claro primero los operadores, para poder hacer el filtrado más a
 db.basedd.find( { $and: [ { year: 1998 }, { price: 10 } ] } )
 
 ```
+<br>[Volver al Índice](#Índice)
 
 ## Comparación
 
@@ -158,6 +159,7 @@ db.basedd.find( { $and: [ { year: 1998 }, { price: 10 } ] } )
 // Ejemplo
 
 ```
+<br>[Volver al Índice](#Índice)
 
 ## Elementos
 
@@ -174,15 +176,10 @@ db.basedd.find( { $and: [ { year: 1998 }, { price: 10 } ] } )
 
 ```
 
-## Proyección
-
-```mongoDB
-
-```
-
 ## Evaluación
 
 ```mongoDB
+
 
 ```
 
