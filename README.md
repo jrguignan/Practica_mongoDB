@@ -11,7 +11,6 @@
 * [Operadores](#Operadores)
   * [Comparación](#Comparación)
   * [Elementos](#Elementos)
-  * [Proyección](#Proyección)
   * [Evaluación](#Evaluación)
 * [Consulta de Datos (CRUD)](#Consulta-de-Datos-(CRUD))
   * [Inserción](#Inserción)
@@ -165,12 +164,12 @@ db.basedd.find( { $and: [ { year: 1998 }, { price: 10 } ] } )
 
 ```mongoDB
 
-// Coincide con los documentos que tienen un campo especificado. Este operador tiene un valor booleano 
-//que puede ser true o false.
+// Coincide con los documentos que tienen un campo especificado. Este operador
+//tiene un valor booleano que puede ser true o false.
 { field: { $exists: <boolean> } } 
 
-//Hace coincidir los documentos según el tipo de campo especificado. Es útil cuando tienes datos muy 
-//desestructurados, o cuando los tipos de datos no son predecibles.
+// Hace coincidir los documentos según el tipo de campo especificado. Es útil cuando 
+//tienes datos muy desestructurados, o cuando los tipos de datos no son predecibles.
 
 { field: { $type: <BSON type> } }
 
