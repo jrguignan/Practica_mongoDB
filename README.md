@@ -187,6 +187,32 @@ db.basedd.find( { $and: [ { year: 1998 }, { price: 10 } ] } )
 
 
 
+// busca un texto dentro del contenido del campo especificado, indexado con un índice 
+//de texto
+
+{  
+  $text:  
+    {  
+      $search: <string>,  
+      $language: <string>,  
+      $caseSensitive: <boolean>,  
+      $diacriticSensitive: <boolean>   
+    }  
+}
+
+
+
+// Permite aprovechar las expresiones de agregación dentro del lenguaje de consulta
+
+{ $expr: { <expression> } }
+
+
+
+// Se usa para pasar una cadena que contenga una función completa de JavaScript o una
+//expresión de JavaScript al sistema de consulta
+
+{ $where: <string|JavaScript Code> }
+
 ```
 
 <br>[Volver al Índice](#Índice)
