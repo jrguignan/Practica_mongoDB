@@ -145,10 +145,10 @@ db.basedd.find( { $and: [ { year: 1998 }, { price: 10 } ] } )
 // Menor o igual que
 { field: { $lte: value } }
 
-// Devuelve documentos que cumplen con los valores específicos
+// Devuelve documentos que cumplen con los valores específicos del arreglo
 { field: { $in: [<value1>, <value2>, ... <valueN> ] } }
 
-// Devuelve documentos que NO cumplen con los valores específicos
+// Devuelve documentos que NO cumplen con los valores específicos del arreglo
 { field: { $in: [<value1>, <value2>, ... <valueN> ] } }
 
 
@@ -174,6 +174,12 @@ db.basedd.find( { $and: [ { year: 1998 }, { price: 10 } ] } )
 //tienes datos muy desestructurados, o cuando los tipos de datos no son predecibles.
 
 { field: { $type: <BSON type> } }
+
+
+// Hace coincidir con los documentos que contienen un campo de matriz con al menos un elemento 
+//que coincide con todos los criterios de consulta especificados.
+
+{ : { $elemMatch: { <query1>, <query2>, ... } } }
 
 ```
 
@@ -219,8 +225,37 @@ db.basedd.find( { $and: [ { year: 1998 }, { price: 10 } ] } )
 
 # Consulta de Datos (CRUD)
 
+## Básico
+```mongoDB
+
+//Muestra las bases de datos
+show dbs
+
+//Posiciona el cursor en la coleccion pertinente
+use coleccion
+
+// asigna la referencia de la nueva base de datos (basedd) a la variable db
+db = db.getSiblingDB("basedd")
+
+//Consultar una colección
+db.coleccion.find()
+
+// Consulta una coleccion, pero la muestra mas ordenada
+db.coleccion.find().pretty()
+
+// Devuleva el primer documento que encuentre que cumpla la condición
+db.coleccion.findOne({field : value})
+
+```
+
+
 ## Inserción
 ```mongoDB
+
+//Insertar un elemento
+
+
+//Insertar varios elementos
 
 ```
 
