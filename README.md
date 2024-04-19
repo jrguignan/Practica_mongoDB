@@ -229,21 +229,32 @@ db.basedd.find( { $and: [ { year: 1998 }, { price: 10 } ] } )
 ```mongoDB
 
 //Muestra las bases de datos
+
 show dbs
 
+
 //Posiciona el cursor en la coleccion pertinente
+
 use coleccion
 
+
 // asigna la referencia de la nueva base de datos (basedd) a la variable db
+
 db = db.getSiblingDB("basedd")
 
+
 //Consultar una colección
+
 db.coleccion.find()
 
+
 // Consulta una coleccion, pero la muestra mas ordenada
+
 db.coleccion.find().pretty()
 
+
 // Devuleva el primer documento que encuentre que cumpla la condición
+
 db.coleccion.findOne({field : value})
 
 ```
@@ -272,6 +283,8 @@ db.coleccion.findOne({field : value})
 ```mongoDB
 
 ```
+
+
 
 <br>[Volver al Índice](#Índice)
 
