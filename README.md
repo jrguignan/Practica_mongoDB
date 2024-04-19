@@ -13,6 +13,7 @@
   * [Elementos](#Elementos)
   * [Evaluación](#Evaluación)
 * [Consulta de Datos (CRUD)](#Consulta-de-Datos-(CRUD))
+  * [Comandos Básicos](#Comandos-Básicos)
   * [Inserción](#Inserción)
   * [Lectura](#Lectura)
   * [Actualización](#Actualización)
@@ -225,7 +226,7 @@ db.basedd.find( { $and: [ { year: 1998 }, { price: 10 } ] } )
 
 # Consulta de Datos (CRUD)
 
-## Básico
+## Comandos Básicos
 ```mongoDB
 
 //Muestra las bases de datos
