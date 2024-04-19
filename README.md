@@ -230,6 +230,9 @@ db.basedd.find( { $and: [ { year: 1998 }, { price: 10 } ] } )
 ## Comandos Básicos
 ```mongoDB
 
+
+
+
 //Muestra las bases de datos
 
 show dbs
@@ -244,6 +247,10 @@ use coleccion
 
 db = db.getSiblingDB("basedd")
 
+
+//Muestra comandos mas usados
+
+bd.help()
 
 //Consultar una colección
 
@@ -267,8 +274,12 @@ db.coleccion.findOne({field : value})
 
 //Insertar un elemento
 
+db.insertOne({})
+
 
 //Insertar varios elementos
+
+db.insertMany({})
 
 ```
 
