@@ -252,6 +252,28 @@ db = db.getSiblingDB("basedd")
 
 bd.help()
 
+
+
+```
+
+
+## Inserción
+```mongoDB
+
+//Insertar un elemento
+
+db.coleccion.insertOne({})
+
+
+//Insertar varios elementos
+
+db.coleccion.insertMany({})
+
+```
+
+## Lectura
+```mongoDB
+
 //Consultar una colección
 
 db.coleccion.find()
@@ -265,26 +287,6 @@ db.coleccion.find().pretty()
 // Devuleva el primer documento que encuentre que cumpla la condición
 
 db.coleccion.findOne({field : value})
-
-```
-
-
-## Inserción
-```mongoDB
-
-//Insertar un elemento
-
-db.insertOne({})
-
-
-//Insertar varios elementos
-
-db.insertMany({})
-
-```
-
-## Lectura
-```mongoDB
 
 ```
 
