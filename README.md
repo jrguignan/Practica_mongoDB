@@ -1,4 +1,4 @@
-# Práctica mongoDB  - En Construcción 🚧
+# Práctica MongoDB  - En Construcción 🚧
 
 <p align="center">
 <img src="images/mongodb.png"  height=150>
