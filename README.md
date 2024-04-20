@@ -225,10 +225,17 @@ db.basedd.find( { $and: [ { year: 1998 }, { price: 10 } ] } )
 ## Indexación
 ```mongoDB
 
-//
+Es un proceso similar al de SQL, se usa para mejorar el rendimiento de la base de datos. Pueden ser índices simples y múltiples.
+
+//Crear indexación con índice único para un campo.
+
 db.coleccion.createIndex({field : value},{unique : true})
 
+db.coleccion.getIndexes()
 
+// Oculta la indexación
+
+db.coleccion.hideIdex()
 ```
 
 <br>[Volver al Índice](#Índice)
