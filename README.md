@@ -248,7 +248,13 @@ db.coleccion.hideIdex()
 
 # Método de Cursores
 ```mongoDB
+//
 
+.sort()
+
+//
+
+.limit()
 
 ```
 
