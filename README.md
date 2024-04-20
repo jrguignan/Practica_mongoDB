@@ -12,6 +12,8 @@
   * [Comparación](#Comparación)
   * [Elementos](#Elementos)
   * [Evaluación](#Evaluación)
+  * [Indexación](#Indexación)
+  * [Método de Cursores](#Métdodo-de-Cursores)
 * [Consulta de Datos (CRUD)](#Consulta-de-Datos-(CRUD))
   * [Comandos Básicos y Proyección](#Comandos-Básicos-y-Proyección)
   * [Inserción](#Inserción)
@@ -244,12 +246,20 @@ db.coleccion.getIndexes()
 db.coleccion.hideIdex()
 ```
 
+# Método de Cursores
+```mongoDB
+
+
+```
+
+
 <br>[Volver al Índice](#Índice)
 
 # Consulta de Datos (CRUD)
 
 ## Comandos Básicos y Proyección
 ```mongoDB
+
 
 //Muestra las bases de datos
 
