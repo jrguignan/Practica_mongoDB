@@ -222,6 +222,14 @@ db.basedd.find( { $and: [ { year: 1998 }, { price: 10 } ] } )
 { $where: <string|JavaScript Code> }
 
 ```
+## Indexación
+```mongoDB
+
+//
+db.coleccion.createIndex({field : value},{unique : true})
+
+
+```
 
 <br>[Volver al Índice](#Índice)
 
