@@ -5,7 +5,7 @@
 </p>
 
 # Índice
-* [mongoDB](#mongoDB)
+* [MongoDB](#MongoDB)
 * [Crear Conexiones en mongoDB Compass](#Crear-Conexiones-en-mongoDB-Compass)
 * [Crear Cluster mongoDB - ATLAS](#Crear-Cluster-mongoDB---ATLAS)
 * [Operadores](#Operadores)
@@ -24,7 +24,7 @@
 * [Autor](#Autor)
 
 
-# mongoDB 
+# MongoDB 
 
 Es un sistema de gestión de bases de datos de código abierto y orientado a documentos, que se clasifica dentro de la categoría de bases de datos NoSQL (Not Only SQL). Está diseñado para ser escalable, flexible y fácil de usar. En lugar de almacenar datos en tablas con filas y columnas, como en las bases de datos relacionales tradicionales, MongoDB almacena datos en documentos BSON (Binary JSON) dentro de colecciones.<br>
 
