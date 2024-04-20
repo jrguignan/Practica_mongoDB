@@ -18,6 +18,7 @@
   * [Lectura](#Lectura)
   * [Actualización](#Actualización)
   * [Borrado](#Borrado)
+* [Agregación](#Agregación)  
 * [Práctica de Comandos](#Práctica-de-Comandos)  
 * [Tegnologías Utilizadas](#Tegnologías-Utilizadas)
 * [Autor](#Autor)
