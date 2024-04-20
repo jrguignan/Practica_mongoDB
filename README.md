@@ -327,10 +327,15 @@ db.coleccion.deleteOne()
 db.coleccion.deleteMany()
 
 ```
+# Agregación
+```mongoDB
+
+```
 
 # Prática de Comandos
+```mongoDB
 
-
+```
 
 <br>[Volver al Índice](#Índice)
 
