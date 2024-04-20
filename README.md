@@ -227,11 +227,8 @@ db.basedd.find( { $and: [ { year: 1998 }, { price: 10 } ] } )
 
 # Consulta de Datos (CRUD)
 
-## Comandos Básicos
+## Comandos Básicos y Proyección
 ```mongoDB
-
-
-
 
 //Muestra las bases de datos
 
@@ -293,9 +290,26 @@ db.coleccion.findOne({field : value})
 ## Actualización
 ```mongoDB
 
+db.coleccion.replaceOne()
+
+
+db.coleccion.updateOne()
+
+
+db.coleccion.findAndModify()
+
 ```
 ## Borrado
 ```mongoDB
+
+//Borra un documento
+
+db.coleccion.deleteOne()
+
+
+//Borra varios documentos
+
+db.coleccion.deleteMany()
 
 ```
 
