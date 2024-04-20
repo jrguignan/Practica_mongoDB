@@ -273,12 +273,12 @@ bd.help()
 ## Inserción
 ```mongoDB
 
-//Insertar un elemento
+//Insertar un documento
 
 db.coleccion.insertOne({})
 
 
-//Insertar varios elementos
+//Insertar varios documentos
 
 db.coleccion.insertMany({})
 
@@ -306,13 +306,17 @@ db.coleccion.findOne({field : value})
 ## Actualización
 ```mongoDB
 
+// Modifica un documento
+
 db.coleccion.replaceOne()
 
+
+// Modifica varios documentos
 
 db.coleccion.updateOne()
 
 
-db.coleccion.findAndModify()
+db.coleccion.findAndModify({query:{ }, update:{ }, new : false })
 
 ```
 ## Borrado
@@ -335,6 +339,8 @@ db.coleccion.deleteMany()
 
 # Prática de Comandos
 ```mongoDB
+
+
 
 ```
 
