@@ -13,7 +13,7 @@
   * [Elementos](#Elementos)
   * [Evaluación](#Evaluación)
   * [Indexación](#Indexación)
-  * [Método de Cursores](#Métdodo-de-Cursores)
+  * [Método de Cursores](#Método-de-Cursores)
 * [Consulta de Datos (CRUD)](#Consulta-de-Datos-(CRUD))
   * [Comandos Básicos y Proyección](#Comandos-Básicos-y-Proyección)
   * [Inserción](#Inserción)
