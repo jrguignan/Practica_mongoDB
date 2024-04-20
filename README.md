@@ -13,7 +13,7 @@
   * [Elementos](#Elementos)
   * [Evaluación](#Evaluación)
 * [Consulta de Datos (CRUD)](#Consulta-de-Datos-(CRUD))
-  * [Comandos Básicos](#Comandos-Básicos)
+  * [Comandos Básicos y Proyección](#Comandos-Básicos-y-Proyección)
   * [Inserción](#Inserción)
   * [Lectura](#Lectura)
   * [Actualización](#Actualización)
