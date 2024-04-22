@@ -1,5 +1,3 @@
-# Práctica MongoDB  
-
 <p align="center">
 <img src="images/mongodb.png"  height=150>
 </p>
