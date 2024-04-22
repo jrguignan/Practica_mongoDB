@@ -294,7 +294,6 @@ bd.help()
 
 ## Inserción
 ```mongoDB
-
 //Insertar un documento
 
 db.coleccion.insertOne({})
@@ -310,7 +309,6 @@ db.coleccion.insertMany({})
 
 ## Lectura
 ```mongoDB
-
 //Consultar una colección
 
 db.coleccion.find()
@@ -331,7 +329,6 @@ db.coleccion.findOne({field : value})
 
 ## Actualización
 ```mongoDB
-
 // Modifica un documento
 
 db.coleccion.replaceOne()
@@ -349,7 +346,6 @@ db.coleccion.findAndModify({query:{ }, update:{ }, new : false })
 
 ## Borrado
 ```mongoDB
-
 //Borra un documento
 
 db.coleccion.deleteOne()
@@ -365,7 +361,6 @@ db.coleccion.deleteMany()
 
 # Agregación
 ```mongoDB
-
 Claro, aquí tienes un ejemplo de cómo usar las etapas de agregación en MongoDB, incluyendo $project, $match, $group, $set, $count y $out:
 
 Supongamos que tienes una colección de "ventas" que contiene documentos con la siguiente estructura:
@@ -417,7 +412,6 @@ $out: Guarda los resultados en una nueva colección llamada "ventas_totales_por_
 
 # Prática de Comandos
 ```mongoDB
-
 Agregar un documentos
 agregar multiples documentos
 
