@@ -334,11 +334,11 @@ db.coleccion.findOne(query, projection, options)
 
 db.coleccion.replaceOne(filter, reemplazo)
 
-
-db.coleccion.updateOne()
+//Modifica el archivo por el campo especificado
+db.coleccion.updateOne({query:{ }, update:{ })
 
 // Modifica varios documentos
-db.coleccion.updateMany()
+db.coleccion.updateMany({query:{ }, update:{ })
 
 db.coleccion.findAndModify({query:{ }, update:{ }, new : false })
 
@@ -433,7 +433,10 @@ db.Peliculas.find({year:2024},{year:1, title:1}).sort({title:1})
 db.Peliculas.find({year:1999},{_id:0,year:1,title:1}).limit(3)
 
 Ejemplo de modificar un archivo
+db.Peliculas.updateOne({title:"Kung Fu Panda 4"},{$set:{title:"Kung Fu Pandas #4"}})
 ejemplo de modificar varios archivos
+
+db.Peliculas.updateMany({year:2024},{$inc:{year:1}})
 
 borrado de un archivo
 borrado de varios archivos
