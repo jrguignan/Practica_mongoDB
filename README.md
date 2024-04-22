@@ -279,6 +279,10 @@ use coleccion
 
 db.getCollectionNames()
 
+// borrar coleccion
+
+db.coleccion.drop()
+
 
 // asigna la referencia de la nueva base de datos (basedd) a la variable db
 
