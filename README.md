@@ -430,6 +430,10 @@ ejemplo de modificar varios archivos
 borrado de un archivo
 borrado de varios archivos
 
+ejemplos de agregacion
+
+ejemplos de indexacion
+
 
 
 
