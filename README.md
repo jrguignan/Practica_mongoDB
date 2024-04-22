@@ -426,7 +426,10 @@ db.Peliculas.find({ _id:ObjectId('66266b7716622642e49f990b') } )
 db.Peliculas.find({year:2024},{year:1, title:1}) 
 
 varios ejemplos de find, con distintos operadores, incluyendo cursores
-proyeccion
+
+db.Peliculas.find({year:2024},{year:1, title:1}).sort({title:1})
+
+db.Peliculas.find({year:1999},{_id:0,year:1,title:1}).limit(3)
 
 Ejemplo de modificar un archivo
 ejemplo de modificar varios archivos
