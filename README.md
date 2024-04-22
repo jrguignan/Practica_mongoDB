@@ -427,6 +427,9 @@ proyeccion
 Ejemplo de modificar un archivo
 ejemplo de modificar varios archivos
 
+borrado de un archivo
+borrado de varios archivos
+
 
 
 
