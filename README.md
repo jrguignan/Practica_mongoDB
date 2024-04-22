@@ -232,14 +232,18 @@ db.basedd.find( { $and: [ { year: 1998 }, { price: 10 } ] } )
 
 ## Indexación
 ```mongoDB
-
 Es un proceso similar al de SQL, se usa para mejorar el rendimiento de la base de datos. Pueden ser índices simples y múltiples.
 
 //Crear indexación con índice único para un campo.
 
 db.coleccion.createIndex({field : value},{unique : true})
 
+
+//
+
 db.coleccion.getIndexes()
+
+
 
 // Oculta la indexación
 
@@ -249,7 +253,9 @@ db.coleccion.hideIdex()
 # Método de Cursores
 ```mongoDB
 //Ordena la salida ascendente o descendente, numero o letra.
+
 .sort({field : 1})
+
 
 //Muestra n documentos de salida
 
@@ -264,8 +270,6 @@ db.coleccion.hideIdex()
 
 ## Comandos Básicos y Proyección
 ```mongoDB
-
-
 //Muestra las bases de datos
 
 show dbs
@@ -275,9 +279,11 @@ show dbs
 
 use coleccion
 
+
 // Muestra las colecciones dentro de la base de datos
 
 db.getCollectionNames()
+
 
 // borrar coleccion
 
@@ -292,9 +298,6 @@ db = db.getSiblingDB("basedd")
 //Muestra comandos mas usados
 
 bd.help()
-
-
-
 ```
 
 <br>[Volver al Índice](#Índice)
@@ -341,11 +344,16 @@ db.coleccion.findOne(query, projection, options)
 
 db.coleccion.replaceOne(filter, reemplazo)
 
+
 //Modifica el archivo por el campo especificado
+
 db.coleccion.updateOne({query:{ }, update:{ }})
 
+
 // Modifica varios documentos
+
 db.coleccion.updateMany({query:{ }, update:{ }})
+
 
 db.coleccion.findAndModify({query:{ }, update:{ }, new : false })
 
@@ -454,7 +462,7 @@ db.Peliculas.deleteMany({year:{$gte:2023}})
 
 ejemplos de agregacion
 
-ejemplos de indexacion
+
 
 
 
