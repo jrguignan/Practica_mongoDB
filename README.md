@@ -249,7 +249,7 @@ db.coleccion.hideIdex()
 # Método de Cursores
 ```mongoDB
 //Ordena la salida ascendente o descendente, numero o letra.
-.sort()
+.sort({field : 1})
 
 //Muestra n documentos de salida
 
@@ -338,10 +338,10 @@ db.coleccion.findOne(query, projection, options)
 db.coleccion.replaceOne(filter, reemplazo)
 
 //Modifica el archivo por el campo especificado
-db.coleccion.updateOne({query:{ }, update:{ })
+db.coleccion.updateOne({query:{ }, update:{ }})
 
 // Modifica varios documentos
-db.coleccion.updateMany({query:{ }, update:{ })
+db.coleccion.updateMany({query:{ }, update:{ }})
 
 db.coleccion.findAndModify({query:{ }, update:{ }, new : false })
 
