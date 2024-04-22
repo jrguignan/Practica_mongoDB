@@ -276,6 +276,10 @@ show dbs
 
 use coleccion
 
+// Muestra las colecciones dentro de la base de datos
+
+db.getCollectionNames()
+
 
 // asigna la referencia de la nueva base de datos (basedd) a la variable db
 
