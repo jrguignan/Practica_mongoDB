@@ -1,4 +1,4 @@
-# Práctica MongoDB  - En Construcción 🚧
+# Práctica MongoDB  
 
 <p align="center">
 <img src="images/mongodb.png"  height=150>
@@ -8,19 +8,20 @@
 * [MongoDB](#MongoDB)
 * [Crear Conexiones en mongoDB Compass](#Crear-Conexiones-en-mongoDB-Compass)
 * [Crear Cluster mongoDB - ATLAS](#Crear-Cluster-mongoDB---ATLAS)
+* [Cargar Archivo](#Cargar-Archivo)
 * [Operadores](#Operadores)
   * [Comparación](#Comparación)
   * [Elementos](#Elementos)
   * [Evaluación](#Evaluación)
   * [Indexación](#Indexación)
   * [Método de Cursores](#Método-de-Cursores)
+  * [Agregación](#Agregación) 
 * [Consulta de Datos (CRUD)](#Consulta-de-Datos-(CRUD))
   * [Comandos Básicos y Proyección](#Comandos-Básicos-y-Proyección)
   * [Inserción](#Inserción)
   * [Lectura](#Lectura)
   * [Actualización](#Actualización)
-  * [Borrado](#Borrado)
-* [Agregación](#Agregación)  
+  * [Borrado](#Borrado) 
 * [Práctica de Comandos](#Práctica-de-Comandos)  
 * [Tegnologías Utilizadas](#Tegnologías-Utilizadas)
 * [Autor](#Autor)
@@ -103,6 +104,16 @@ Al terminar faltaría configurar un usuario y una contraseña para acceder a la 
 tambien sería útil por ser un práctica configurar la entrada para cualquier IP, esto ahorraría tiempo en configuración, esto se hace en Network Access
 
 Luego en database y dando click a connect se puede obtener la URI para conectar con Compass y la shell de VS, sólo hay que cambiar <password> por la contraseña de usuario creada.
+
+<br>[Volver al Índice](#Índice)
+
+# Cargar Archivo
+
+Para cargar el archivo [cargarPeliculas.js](https://github.com/jrguignan/Practica_mongoDB/blob/main/cargarPeliculas.js), es más sencillo hacerlo desde Compass. Después de crear la colección, ADD DATA y luego insert document y escoger e archivo. asi se puede cargar.
+
+Desde la shell se puede hacer con el comando load(cargarPeliculas.js), pero el archivo debe estar en el mismo fichero donde se corre el comando load.
+
+*Nota:* En mi caso particular la base de datos se lleva el nombre de basedd, pero debes colocar el nombre de tu base de datos.
 
 <br>[Volver al Índice](#Índice)
 
@@ -250,7 +261,9 @@ db.coleccion.getIndexes()
 db.coleccion.hideIdex()
 ```
 
-# Método de Cursores
+<br>[Volver al Índice](#Índice)
+
+## Método de Cursores
 ```mongoDB
 //Ordena la salida ascendente o descendente, numero o letra.
 
@@ -263,6 +276,51 @@ db.coleccion.hideIdex()
 
 ```
 
+<br>[Volver al Índice](#Índice)
+
+## Agregación
+```mongoDB
+Supongamos que tienes una colección de "ventas" que contiene documentos con la siguiente estructura:
+
+{
+    "_id": ObjectId("60b674e31234567890abcdef"),
+    "producto": "Camiseta",
+    "cantidad": 5,
+    "precio_unitario": 20,
+    "fecha": ISODate("2022-06-01T00:00:00Z"),
+    "sucursal": "Sucursal_A"
+}
+
+db.ventas.aggregate([
+    // Etapa $match para filtrar ventas después de cierta fecha
+    { $match: { fecha: { $gte: ISODate("2022-01-01") } } },
+
+    // Etapa $group para agrupar por producto y sucursal y calcular el total de ventas
+    { $group: {
+        _id: { producto: "$producto", sucursal: "$sucursal" },
+        total_ventas: { $sum: { $multiply: ["$cantidad", "$precio_unitario"] } }
+    } },
+
+    // Etapa $project para darle un formato a los resultados
+    { $project: {
+        _id: 0,
+        producto: "$_id.producto",
+        sucursal: "$_id.sucursal",
+        total_ventas: 1
+    } },
+
+    // Etapa $out para guardar los resultados en una nueva colección
+    { $out: "ventas_totales_por_sucursal" }
+])
+
+//Explicación de las etapas de agregación:
+
+$match: Filtra las ventas para incluir solo aquellas después de cierta fecha.
+$group: Agrupa las ventas por producto y sucursal, y calcula el total de ventas para cada grupo.
+$project: Da formato a los resultados, mostrando solo el producto, la sucursal y el total de ventas.
+$out: Guarda los resultados en una nueva colección llamada "ventas_totales_por_sucursal".
+
+```
 
 <br>[Volver al Índice](#Índice)
 
@@ -370,53 +428,6 @@ db.coleccion.deleteOne()
 //Borra varios documentos
 
 db.coleccion.deleteMany()
-
-```
-
-<br>[Volver al Índice](#Índice)
-
-# Agregación
-```mongoDB
-Supongamos que tienes una colección de "ventas" que contiene documentos con la siguiente estructura:
-
-{
-    "_id": ObjectId("60b674e31234567890abcdef"),
-    "producto": "Camiseta",
-    "cantidad": 5,
-    "precio_unitario": 20,
-    "fecha": ISODate("2022-06-01T00:00:00Z"),
-    "sucursal": "Sucursal_A"
-}
-
-db.ventas.aggregate([
-    // Etapa $match para filtrar ventas después de cierta fecha
-    { $match: { fecha: { $gte: ISODate("2022-01-01") } } },
-
-    // Etapa $group para agrupar por producto y sucursal y calcular el total de ventas
-    { $group: {
-        _id: { producto: "$producto", sucursal: "$sucursal" },
-        total_ventas: { $sum: { $multiply: ["$cantidad", "$precio_unitario"] } }
-    } },
-
-    // Etapa $project para darle un formato a los resultados
-    { $project: {
-        _id: 0,
-        producto: "$_id.producto",
-        sucursal: "$_id.sucursal",
-        total_ventas: 1
-    } },
-
-    // Etapa $out para guardar los resultados en una nueva colección
-    { $out: "ventas_totales_por_sucursal" }
-])
-
-//Explicación de las etapas de agregación:
-
-$match: Filtra las ventas para incluir solo aquellas después de cierta fecha.
-$group: Agrupa las ventas por producto y sucursal, y calcula el total de ventas para cada grupo.
-$project: Da formato a los resultados, mostrando solo el producto, la sucursal y el total de ventas.
-$out: Guarda los resultados en una nueva colección llamada "ventas_totales_por_sucursal".
-
 
 ```
 
