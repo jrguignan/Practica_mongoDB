@@ -412,8 +412,18 @@ $out: Guarda los resultados en una nueva colección llamada "ventas_totales_por_
 
 # Prática de Comandos
 ```mongoDB
-Agregar un documentos
-agregar multiples documentos
+db.Peliculas.insertOne({year : 2023 , title : "The Little Mermaid" , director : "Rob Marshall" })
+
+
+db.Peliculas.insertMany([
+  {title:"Kung Fu Panda 4", year:2024, director:"Mike Mitchell"},
+  {title:"Karate Kid",      year:2024, director:"Jonathan Entwistle"}
+                        ]) 
+
+Revisar si se agregarondb.
+db.Peliculas.find({ _id:ObjectId('66266b7716622642e49f990b') } )
+
+db.Peliculas.find({year:2024},{year:1, title:1}) 
 
 varios ejemplos de find, con distintos operadores, incluyendo cursores
 proyeccion
