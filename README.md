@@ -366,6 +366,51 @@ db.coleccion.deleteMany()
 # Agregación
 ```mongoDB
 
+Claro, aquí tienes un ejemplo de cómo usar las etapas de agregación en MongoDB, incluyendo $project, $match, $group, $set, $count y $out:
+
+Supongamos que tienes una colección de "ventas" que contiene documentos con la siguiente estructura:
+
+json
+Copy code
+{
+    "_id": ObjectId("60b674e31234567890abcdef"),
+    "producto": "Camiseta",
+    "cantidad": 5,
+    "precio_unitario": 20,
+    "fecha": ISODate("2022-06-01T00:00:00Z"),
+    "sucursal": "Sucursal_A"
+}
+
+db.ventas.aggregate([
+    // Etapa $match para filtrar ventas después de cierta fecha
+    { $match: { fecha: { $gte: ISODate("2022-01-01") } } },
+
+    // Etapa $group para agrupar por producto y sucursal y calcular el total de ventas
+    { $group: {
+        _id: { producto: "$producto", sucursal: "$sucursal" },
+        total_ventas: { $sum: { $multiply: ["$cantidad", "$precio_unitario"] } }
+    } },
+
+    // Etapa $project para darle un formato a los resultados
+    { $project: {
+        _id: 0,
+        producto: "$_id.producto",
+        sucursal: "$_id.sucursal",
+        total_ventas: 1
+    } },
+
+    // Etapa $out para guardar los resultados en una nueva colección
+    { $out: "ventas_totales_por_sucursal" }
+])
+
+//Explicación de las etapas de agregación:
+
+$match: Filtra las ventas para incluir solo aquellas después de cierta fecha.
+$group: Agrupa las ventas por producto y sucursal, y calcula el total de ventas para cada grupo.
+$project: Da formato a los resultados, mostrando solo el producto, la sucursal y el total de ventas.
+$out: Guarda los resultados en una nueva colección llamada "ventas_totales_por_sucursal".
+
+
 ```
 
 <br>[Volver al Índice](#Índice)
@@ -373,6 +418,10 @@ db.coleccion.deleteMany()
 # Prática de Comandos
 ```mongoDB
 
+Agregar un documentos
+agregar multiples documentos
+
+varios ejemplos de find, con distintos operadores, incluyendo cursores
 
 
 ```
