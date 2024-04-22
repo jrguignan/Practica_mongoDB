@@ -321,7 +321,7 @@ db.coleccion.find().pretty()
 
 // Devuleva el primer documento que encuentre que cumpla la condición
 
-db.coleccion.findOne({field : value})
+db.coleccion.findOne(query, projection, options)
 
 ```
 
