@@ -438,8 +438,12 @@ ejemplo de modificar varios archivos
 
 db.Peliculas.updateMany({year:2024},{$inc:{year:1}})
 
+// Para borrra lo más sensato es borrar por _id
 borrado de un archivo
+db.Peliculas.deleteOne({year:2023})
+
 borrado de varios archivos
+db.Peliculas.deleteMany({year:{$gte:2023}})
 
 ejemplos de agregacion
 
