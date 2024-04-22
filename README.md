@@ -330,14 +330,15 @@ db.coleccion.findOne(query, projection, options)
 ## Actualización
 ```mongoDB
 // Modifica un documento
+//Reemplaza el primer documento que filtre por el nuevo campo
 
-db.coleccion.replaceOne()
+db.coleccion.replaceOne(filter, reemplazo)
 
-
-// Modifica varios documentos
 
 db.coleccion.updateOne()
 
+// Modifica varios documentos
+db.coleccion.updateMany()
 
 db.coleccion.findAndModify({query:{ }, update:{ }, new : false })
 
