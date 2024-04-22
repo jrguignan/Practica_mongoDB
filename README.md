@@ -423,6 +423,11 @@ agregar multiples documentos
 
 varios ejemplos de find, con distintos operadores, incluyendo cursores
 
+Ejemplo de modificar un archivo
+ejemplo de modificar varios archivos
+
+
+
 
 ```
 
