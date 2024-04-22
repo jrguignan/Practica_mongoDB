@@ -239,7 +239,7 @@ Es un proceso similar al de SQL, se usa para mejorar el rendimiento de la base d
 db.coleccion.createIndex({field : value},{unique : true})
 
 
-//
+// Da los índices de la colección
 
 db.coleccion.getIndexes()
 
@@ -377,12 +377,8 @@ db.coleccion.deleteMany()
 
 # Agregación
 ```mongoDB
-Claro, aquí tienes un ejemplo de cómo usar las etapas de agregación en MongoDB, incluyendo $project, $match, $group, $set, $count y $out:
-
 Supongamos que tienes una colección de "ventas" que contiene documentos con la siguiente estructura:
 
-json
-Copy code
 {
     "_id": ObjectId("60b674e31234567890abcdef"),
     "producto": "Camiseta",
@@ -428,48 +424,52 @@ $out: Guarda los resultados en una nueva colección llamada "ventas_totales_por_
 
 # Prática de Comandos
 ```mongoDB
+// Agrega un elemento
 db.Peliculas.insertOne({year : 2023 , title : "The Little Mermaid" , director : "Rob Marshall" })
 
 
+// Agregar varios elementos
 db.Peliculas.insertMany([
   {title:"Kung Fu Panda 4", year:2024, director:"Mike Mitchell"},
   {title:"Karate Kid",      year:2024, director:"Jonathan Entwistle"}
                         ]) 
 
-Revisar si se agregarondb.
+// Consulta si se agregaron
+
 db.Peliculas.find({ _id:ObjectId('66266b7716622642e49f990b') } )
 
 db.Peliculas.find({year:2024},{year:1, title:1}) 
 
-varios ejemplos de find, con distintos operadores, incluyendo cursores
+
+// Cursores
+
+// Muestra los archivos del año 2024, muestra sólo el año y el título,
+// ordenado por alfabéticamente con título.
 
 db.Peliculas.find({year:2024},{year:1, title:1}).sort({title:1})
 
+// Muestra los documentos del año 1999, muestra sólo el año y el título y 
+// los limita a los primero 3 documentos.
+
 db.Peliculas.find({year:1999},{_id:0,year:1,title:1}).limit(3)
 
-Ejemplo de modificar un archivo
-db.Peliculas.updateOne({title:"Kung Fu Panda 4"},{$set:{title:"Kung Fu Pandas #4"}})
-ejemplo de modificar varios archivos
 
+// Modificación de archivos
+
+// Modifica el documento con título Kung Fu Panda 4 por Kunf Fu Panda #4
+db.Peliculas.updateOne({title:"Kung Fu Panda 4"},{$set:{title:"Kung Fu Pandas #4"}})
+
+
+// Modifica todos loa documentos del año 2024, suma un año a todos los archivos (2025)
 db.Peliculas.updateMany({year:2024},{$inc:{year:1}})
 
+
 // Para borrra lo más sensato es borrar por _id
-borrado de un archivo
+// Borra el primer archivo del año 2023
 db.Peliculas.deleteOne({year:2023})
 
-borrado de varios archivos
+// Borra los archivos con año mayor o igual a 2023
 db.Peliculas.deleteMany({year:{$gte:2023}})
-
-ejemplos de agregacion
-
-
-
-
-
-
-
-
-
 ```
 
 <br>[Volver al Índice](#Índice)
