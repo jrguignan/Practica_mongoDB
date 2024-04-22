@@ -248,13 +248,12 @@ db.coleccion.hideIdex()
 
 # Método de Cursores
 ```mongoDB
-//
-
+//Ordena la salida ascendente o descendente, numero o letra.
 .sort()
 
-//
+//Muestra n documentos de salida
 
-.limit()
+.limit(n)
 
 ```
 
