@@ -263,7 +263,7 @@ db.coleccion.hideIdex()
 
 ## Método de Cursores
 ```mongoDB
-//Ordena la salida ascendente o descendente, numero o letra.
+//Ordena la salida ascendente o descendente, número o letra.
 
 .sort({field : 1})
 
@@ -341,7 +341,7 @@ use coleccion
 db.getCollectionNames()
 
 
-// borrar coleccion
+// borrar colección
 
 db.coleccion.drop()
 
@@ -434,10 +434,12 @@ db.coleccion.deleteMany()
 # Prática de Comandos
 ```mongoDB
 // Agrega un elemento
+
 db.Peliculas.insertOne({year : 2023 , title : "The Little Mermaid" , director : "Rob Marshall" })
 
 
 // Agregar varios elementos
+
 db.Peliculas.insertMany([
   {title:"Kung Fu Panda 4", year:2024, director:"Mike Mitchell"},
   {title:"Karate Kid",      year:2024, director:"Jonathan Entwistle"}
@@ -445,19 +447,19 @@ db.Peliculas.insertMany([
 
 // Consulta si se agregaron
 
-db.Peliculas.find({ _id:ObjectId('66266b7716622642e49f990b') } )
+db.Peliculas.find({ _id:ObjectId('66266b7716622642e49f990b') } ) // conociendo el _id
 
 db.Peliculas.find({year:2024},{year:1, title:1}) 
 
 
 // Cursores
 
-// Muestra los archivos del año 2024, muestra sólo el año y el título,
+// Muestra los archivos del año 2024, sólo el año y el título,
 // ordenado por alfabéticamente con título.
 
 db.Peliculas.find({year:2024},{year:1, title:1}).sort({title:1})
 
-// Muestra los documentos del año 1999, muestra sólo el año y el título y 
+// Muestra los documentos del año 1999, sólo el año y el título y 
 // los limita a los primero 3 documentos.
 
 db.Peliculas.find({year:1999},{_id:0,year:1,title:1}).limit(3)
@@ -466,18 +468,23 @@ db.Peliculas.find({year:1999},{_id:0,year:1,title:1}).limit(3)
 // Modificación de archivos
 
 // Modifica el documento con título Kung Fu Panda 4 por Kunf Fu Panda #4
+
 db.Peliculas.updateOne({title:"Kung Fu Panda 4"},{$set:{title:"Kung Fu Pandas #4"}})
 
 
 // Modifica todos loa documentos del año 2024, suma un año a todos los archivos (2025)
+
 db.Peliculas.updateMany({year:2024},{$inc:{year:1}})
 
 
 // Para borrra lo más sensato es borrar por _id
 // Borra el primer archivo del año 2023
+
 db.Peliculas.deleteOne({year:2023})
 
+
 // Borra los archivos con año mayor o igual a 2023
+
 db.Peliculas.deleteMany({year:{$gte:2023}})
 ```
 
