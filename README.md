@@ -22,6 +22,7 @@
   * [Borrado](#Borrado) 
 * [Práctica de Comandos](#Práctica-de-Comandos)  
 * [Tegnologías Utilizadas](#Tegnologías-Utilizadas)
+* [Certificación Gratuita](#Certificación-Gratuita)
 * [Autor](#Autor)
 
 
@@ -499,6 +500,10 @@ db.Peliculas.deleteMany({year:{$gte:2023}})
 
 
 <br>[Volver al Índice](#Índice)
+
+# Certificación Gratuita
+
+Se puede obtener certificado gratuito para varios tipos de cursos en la página oficial de MongoDB [https://learn.mongodb.com/](https://learn.mongodb.com/)
 
 # Autor
 - José R. Guignan
